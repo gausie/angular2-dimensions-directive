@@ -17,10 +17,10 @@ import { DimensionsDirective } from 'angular2-clickoutside-directive';
 @Component({
   selector: 'my-app',
   template : `
-  <div clickOutside (onDimensionsChange)="onDimensionsChangeHandler($event)"">
+  <div dimensions (onDimensionsChange)="onDimensionsChangeHandler($event)"">
     A button
   </button>`,
-  directives : [  ClickOutsideDirective ]
+  directives : [  DimensionsDirective ]
 } )
 class MyFirstComponent implements OnInit {
   constructor(){}
